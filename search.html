@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Turo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/search.css">
+
+  </head>
+
+  <body id="home" class="">
+
+<!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container">
+       <a class="navbar-brand" href="https://teamtreehouse.com" target="_blank"><i class="fas fa-car pr-2"></i>T U R O</a>
+       <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+         <div class="navbar-nav">
+           <a class="nav-item nav-link" href="#login">Login</a>
+           <a class="nav-item nav-link" href="#signup">Sign up</a>
+           <a class="nav-item nav-link" href="#listyourcar">List your car</a>
+           <div class="learnmore btn-group dropdown mr-3">
+             <button type="button" class="btn btn-dark btn-sm " data-toggle="dropdown">
+               Learn more <i class="fas fa-angle-down pl-1"></i>
+             </button>
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="#howturoworks">How TURO works</a>
+               <a class="dropdown-item" href="#rentacar">Rent a car</a>
+               <a class="dropdown-item" href="#makemoney">Make money from your car</a>
+               <a class="dropdown-item" href="#trustsafety">Trust & safety</a>
+               <a class="dropdown-item" href="#contactsupport">Contact & support</a>
+             </div>
+           </div>
+         </div>
+       </div>
+      </div>
+    </nav>
+<!--  /navbar  -->
+
+<!-- searchbar -->
+
+     <div class=" searchbar bg-dark mb-2 pb-2">
+       <div class="searchbar-container " >
+         <form class="searchbar-form mx-5" action="index.html" method="post">
+
+           <div class="searchbar-form-location my-2">
+               <label class="mr-2" for="where">Where</label>
+               <input type="text" class="pl-1" id="" placeholder="Enter city, airport, or address">
+           </div>
+
+          <div class="searchbar-form-dateTime ml-4 my-2">
+            <label class="mr-2" for="where">From</label>
+            <input type="text" class="pl-1" id="" >
+          </div>
+
+          <div class="searchbar-form-dateTime ml-4 my-2">
+            <label class="mr-2" for="where">Until</label>
+            <input type="text" class="pl-1" id="" >
+            <img class="search-button-image ml-2" src="img/search2.png" width="32px" height="32px">
+            <!-- <button class="search-button mb-2 pl-2 " type="button" name="search"><img class="search-button-image"src="img/lens.png" width="27px" height="27px"></button> -->
+          </div>
+
+         </form>
+       </div>
+     </div>
+
+<!-- /searchbar -->
+<div class="body-content container">
+
+<!-- Side navigation -->
+    <div class="sidenav container float-left my-4">
+      <div class="btn-group btn-group-lg d-flex justify-content-center" role="group">
+        <button type="button" class="btn btn-outline-success"><i class="fas fa-list-ul"></i>  List</button>
+        <button type="button" class="btn btn-outline-success"><i class="fas fa-map-marker-alt"></i>  Map</button>
+      </div>
+
+      <hr class="ml-3">
+
+      <label class="d-flex ml-3 mt-4 w-75" for="sortby">Sort By</label>
+      <div class= "mx-3">
+         <select id="sortby" class="select-box form-control form-control-sm">
+           <option selected>Relevance</option>
+           <option>Price: low to high</option>
+           <option>Price: high to low</option>
+         </select>
+      </div>
+
+      <label class="d-flex ml-3 mt-4 w-75" for="price">Price</label>
+      <div class="slidecontainer mx-5">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <input type="range" min="1" max="100" value="10" class="slider" id="myRange">
+      </div>
+
+      <label class="d-flex ml-3 mt-4" for="delivery">Delivery</label>
+      <div class="form-check w-80 ml-5">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <div class="form-check-label small" for="defaultCheck1">Get your car delivered directly to you.</div>
+      </div>
+
+      <label class="d-flex ml-3 mt-4" for="bookinstantly">Book Instantly</label>
+      <div class="form-check w-80 ml-5">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <div class="form-check-label small ml-0" for="defaultCheck1">Reserve the car without waiting for owner approval.</div>
+      </div>
+
+      <hr class="ml-3">
+
+      <!--  Collapse  -->
+      <a class="text-success ml-3 text-small" data-toggle="collapse" data-target="#moreFilters">
+        <u>More filters</u>
+      </a>
+
+      <div class="collapse" id="moreFilters">
+        <label class="d-flex ml-3 mt-4" for="features">Features</label>
+        <div class="select-box mx-3 py-1" data-toggle="collapse" data-target="#features">
+          <div class="select-box-content pl-2 d-flex justify-content-between">
+            <div class="">
+              -Select-
+            </div>
+            <div class="">
+              <img class="sort" src="img/sort1.png">
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="features">
+          <div class="row m-2">
+            <div class="col text-center border border-dark m-2">
+              <i class="fas fa-music fa-lg mt-3"></i>
+              <div class="option mb-2">Audio input</div>
+            </div>
+            <div class="col text-center border border-dark m-2">
+              <i class="fab fa-bluetooth-b fa-lg mt-3"></i>
+              <div class="option mb-2">Bluetooth</div>
+            </div>
+          </div>
+
+          <div class="row m-2">
+            <div class="col text-center border border-dark m-2">
+              <i class="fab fa-usb fa-lg mt-3"></i>
+              <div class="option mb-2">USB input</div>
+            </div>
+            <div class="col text-center border border-dark m-2">
+              <i class="fas fa-location-arrow fa-lg mt-3"></i>
+              <div class="option mb-2">GPS</div>
+            </div>
+          </div>
+
+          <div class="row m-2">
+            <div class="col text-center border border-dark m-2">
+              <img src="img/convertible.png" class="option-icon" width="50px" height="50px">
+              <div class="option mb-2">Convertible</div>
+            </div>
+            <div class="col text-center border border-dark m-2">
+              <i class="fas fa-sun fa-2x mt-3"></i>
+              <div class="option mb-2">Sunroof</div>
+            </div>
+          </div>
+        </div>
+
+        <label class="d-flex ml-3 mt-4 w-75" for="vehicletypes">Vehicle Types</label>
+        <div class="select-box mx-3 py-1 " data-toggle="collapse" data-target="#vehicletypes">
+          <div class="select-box-content pl-2 d-flex justify-content-between">
+            <div class="">
+              -Select-
+            </div>
+            <div class="">
+              <img class="sort" src="img/sort1.png">
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="vehicletypes">
+          <div class="row m-2">
+            <div class="col text-center border border-dark m-2">
+              <img src="img/car.png" class="option-icon" width="50px" height="40px" >
+              <div class="option mb-2">Cars</div>
+            </div>
+            <div class="col text-center border border-dark m-2">
+              <img src="img/suv.png" class="option-icon" width="50px" height="40px">
+              <div class="option mb-2">SUVs</div>
+            </div>
+          </div>
+          <div class="row m-2">
+            <div class="col text-center border border-dark m-2">
+              <img src="img/minivan.png" class="option-icon" width="50px" height="40px" >
+              <div class="option mb-2">Minivans</div>
+            </div>
+            <div class="col text-center border border-dark m-2">
+              <img src="img/van.png" class="option-icon" width="50px" height="40px">
+              <div class="option mb-2">Vans</div>
+            </div>
+          </div>
+          <div class="row m-2">
+            <div class="col text-center border border-dark m-2">
+              <img src="img/truck.png" class="option-icon" width="50px" height="40px" >
+              <div class="option mb-2">Trucks</div>
+            </div>
+          </div>
+        </div> <!-- /vehicle types -->
+
+        <label class="d-flex ml-3 mt-4 w-75" for="vehiclemakes">Vehicle makes</label>
+        <div class= "mx-3">
+           <select id="vehiclemakes" class="select-box form-control form-control-sm">
+             <option selected>-Select-</option>
+             <option>Honda</option>
+             <option>Perodua</option>
+             <option>Proton</option>
+             <option>Mazda</option>
+             <option>BMW</option>
+             <option>Chevrolet</option>
+           </select>
+        </div>
+
+        <label class="d-flex ml-3 mt-4 w-75" for="vehicleyears">Vehicle years</label>
+        <div class="slidecontainer mx-5">
+          <input type="range" min="2000" max="2018" value="2009" class="slider" id="myRange">
+          <input type="range" min="2000" max="2018" value="2018" class="slider" id="myRange">
+        </div>
+
+        <label class="d-flex ml-3 mt-4 w-75" for="transmission">Transmission</label>
+        <div class= "mx-3 mb-4">
+           <select id="transmission" class="select-box form-control form-control-sm">
+             <option selected>-Select-</option>
+             <option>Manual</option>
+             <option>Automatic</option>
+           </select>
+        </div>
+
+        <hr class="ml-3 mb-4">
+
+
+
+      </div> <!-- /collapse -->
+
+    </div><!-- /Side navigation -->
+
+
+<!--  search result  -->
+    <div class="search-result container pt-3 float-right">
+
+      <div class="row mr-3 mt-3">
+
+        <div class="col-md-6">
+          <div class="card mb-3 p-2 border-light">
+            <img class="card-img-top pb-2" src="img/kereta1.jpg" alt="Vivianne">
+            <div class="card-title display-4">Bentley 2015</div>
+            <div class="text-muted lead"> $50/day </div>
+            <div class="rating text-small">2 trips
+              <span class="pl-1"><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span>
+              <span class="text-muted pl-1"> 5km </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card mb-3 p-2 border-light">
+            <img class="card-img-top pb-2" src="img/kereta2.jpg" alt="Vivianne">
+            <div class="card-title display-4">BMW 2016</div>
+            <div class="text-muted lead"> $50/day </div>
+            <div class="rating text-small">2 trips
+              <span class="pl-1"><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span>
+              <span class="text-muted pl-1"> 5km </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card mb-3 p-2 border-light">
+            <img class="card-img-top pb-2" src="img/kereta3.jpg" alt="Vivianne">
+            <div class="card-title display-4">Porsche 2015</div>
+            <div class="text-muted lead"> $50/day </div>
+            <div class="rating text-small">2 trips
+              <span class="pl-1"><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span>
+              <span class="text-muted pl-1"> 5km </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card mb-3 p-2 border-light">
+            <img class="card-img-top pb-2" src="img/kereta4.jpg" alt="Vivianne">
+            <div class="card-title display-4">Mercedes-benz 2017</div>
+            <div class="text-muted lead"> $50/day </div>
+            <div class="rating text-small">2 trips
+              <span class="pl-1"><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span>
+              <span class="text-muted pl-1"> 5km </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card mb-3 p-2 border-light">
+            <img class="card-img-top pb-2" src="img/kereta5.jpg" alt="Vivianne">
+            <div class="card-title display-4">Porsche 2015</div>
+            <div class="text-muted lead"> $50/day </div>
+            <div class="rating text-small">2 trips
+              <span class="pl-1"><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span>
+              <span class="text-muted pl-1"> 5km </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card mb-3 p-2 border-light">
+            <img class="card-img-top pb-2" src="img/kereta6.jpg" alt="Vivianne">
+            <div class="card-title display-4">Porsche 2017</div>
+            <div class="text-muted lead"> $50/day </div>
+            <div class="rating text-small">2 trips
+              <span class="pl-1"><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span>
+              <span class="text-muted pl-1"> 5km </span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /list kereta -->
+
+
+      <hr>
+      <div class="text-muted text-center my-5">
+        <h2><strong>No more cars available.</strong></h2>
+        <p>Try changing your filters, adjusting your dates, or exploring the map.</p>
+        <button type="button" class="btn btn-outline-success mr-2" data-toggle="modal" data-target="#login"><i class="fas fa-map-marker-alt"></i> View map</button>
+      </div>
+
+      <hr>
+
+    <!-- footer -->
+
+          <div class="col-md text-md-right mb-3">
+            <small>&copy; 2018 Adlin &amp; Yusuf</small>
+          </div>
+    <!-- /footer -->
+
+    </div> <!-- search-result -->
+
+
+</div><!-- bodycontent -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+
+</html>

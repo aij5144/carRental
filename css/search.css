@@ -1,0 +1,166 @@
+
+.btn:hover,
+a,
+.select-box,
+.form-check-input,
+.card,
+.collapse .col,
+.search-button {
+  cursor: pointer;
+}
+
+/* navbar */
+
+.navbar .navbar-brand {
+  color: lightgreen;
+  font-size: 1rem;
+}
+
+.nav-item {
+  color: white;
+  font-size: 14px;
+  margin-right: 16px;
+}
+
+.nav-item:hover {
+  color: lightgreen;
+}
+
+.learnmore .btn:hover {
+  border-color: #343a40;
+  background-color: #343a40;
+  color: lightgreen;
+}
+
+.fa-car {
+  color: white;
+}
+
+.dropdown-item {
+  font-size: 12px;
+}
+/* navbar */
+
+/* searchbar */
+
+input[type=text] {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: inherit;
+    width:230px;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+input[placeholder] {
+  color: #d9d9db;
+  font-size: 13px;
+}
+
+.searchbar label {
+  color: lightgreen;
+  font-weight: lighter;
+}
+
+.searchbar form {
+  display: flex;
+  justify-content:space-around;
+}
+
+.search-button {
+  background-color: inherit;
+  border-radius: 50%;
+  width:46px;
+  height:46px;
+}
+
+.search-button-image:hover {
+  transform: rotate(-20deg);
+}
+
+/* searchbar */
+
+/* bodycontent */
+
+.body-content {
+  width: 90%;
+}
+/* sidenav */
+.sidenav {
+    height: 90%; /* Full-height: remove this if you want "auto" height */
+    width: 25%; /* Set the width of the sidebar */
+    position:; /* Fixed Sidebar (stay in place on scroll) */
+    top: ;
+    overflow-x: hidden; /* Disable horizontal scroll */
+
+}
+
+.btn.group btn {
+  display: flex;
+  justify-content:center;
+}
+
+.option {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.sidenav label {
+  font-weight: 500;
+}
+
+.select-box:focus {
+  box-shadow: none;
+  border-color: #1cb80e;
+}
+
+.select-box {
+  height:30px;
+  border: #a0a0a5 solid 1px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.select-box-content {
+  color: #4d4d51;
+}
+
+.fa-sort {
+  color: #494b4f;
+}
+
+.sort {
+  width: 17px;
+  height: 20px;
+}
+/* sidenav */
+
+/* search result */
+.search-result {
+  width: 75%;
+}
+
+.card-title {
+  font-size: 30px;
+}
+
+.rating {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.fa-star {
+  color: coral;
+}
+
+label {
+  font-size: 14px;
+}
+
+.card-img-top:hover {
+  filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.4));
+}
+
+/* search result */

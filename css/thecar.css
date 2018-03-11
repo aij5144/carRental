@@ -1,0 +1,152 @@
+
+/* navbar */
+
+.navbar .navbar-brand {
+  color: lightgreen;
+  font-size: 1rem;
+}
+
+.nav-item {
+  color: white;
+  font-size: 14px;
+  margin-right: 16px;
+}
+
+.nav-item:hover {
+  color: lightgreen;
+}
+
+.navbar .btn:hover {
+  border-color: #343a40;
+  background-color: #343a40;
+  color: lightgreen;
+}
+
+.fa-car,
+.fa-comments {
+  color: white;
+}
+
+.navbar-profile-picture {
+  border: white solid 2px;
+}
+
+.navbar-profile-picture:hover {
+  border-color: lightgreen;
+}
+
+.dropdown-item {
+  font-size: 14px;
+}
+
+/* navbar */
+
+/* carousel */
+.carousel img{
+  height: 600px;
+  object-fit: cover;
+  position:relative;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  color: lightgreen;
+
+  border-radius: 30%;
+  background-color: rgba(0,0,0,0.6);
+
+}
+
+/* carousel */
+
+.details {
+  width: 90%;
+}
+/* cardetails */
+
+.cardetails {
+  width: 60%;
+}
+
+.car-name {
+  font-size: 35px;
+}
+.ownername {
+  font-size: 14px;
+}
+
+.ownedby-title {
+  font-weight:300;
+  font-size: 18px;
+}
+
+.car-description-content p {
+  font-size: 15px;
+}
+
+.car-description-content h6 {
+  font-size: 18px;
+}
+
+/* cardetails */
+
+
+/* tripdetails */
+
+.trip-details {
+  width: 28%;
+  border: #c5c7c5 solid 1px;
+}
+
+.price {
+  font-size: 40px;
+  font-weight:400;
+}
+
+.price span {
+  font-size: 14px;
+}
+
+.sort {
+  width: 20px;
+  height: 20px;
+}
+
+.select-box {
+  height:34px;
+  border: #c5c7c5 solid 1px;
+  font-size: 14px;
+}
+
+.trip-details label {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.option{
+  font-size: 14px
+}
+
+.option label {
+  font-size: 12px;
+  font-weight:normal;
+}
+
+.checkoutbutton {
+  font-weight:lighter;
+}
+
+.distance {
+  font-size: 14px;
+}
+
+.insurance img {
+  width: 100px;
+}
+
+.report {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+/* tripdetails */
